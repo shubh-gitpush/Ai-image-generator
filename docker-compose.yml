@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: 'myapp'
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=1
+    command: python manage.py runserver 0.0.0.0:8000  # Optional: override CMD in Dockerfile
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    container_name: 'myapp-frontend'
+    # volumes:
+    #   - ./frontend:/app
+    command: npm start
+
+
