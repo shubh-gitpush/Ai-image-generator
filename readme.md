@@ -40,7 +40,7 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
 
 <!-- Screenshot placeholder (replace with your real screenshot) -->
 <figure>
-  <img src="https://via.placeholder.com/350x200.png?text=App+Screenshot" alt="App screenshot" style="max-width:100%;border-radius:8px;">
+  <img src="img.png" alt="App screenshot" style="max-width:100%;border-radius:8px;">
   <figcaption style="font-size:12px;color:#666;margin-top:6px;">Example app UI — replace with your own screenshot/GIF</figcaption>
 </figure>
 
@@ -76,3 +76,4 @@ project-root/
 │       ├── components/
 │       └── pages/
 └── README.md
+
