@@ -39,7 +39,7 @@ It cleanly separates frontend & backend, handles API keys securely, and is desig
 
 ## 🚀 Features
 
-- **Prompt → Response**: Type anything and instantly get an AI-generated reply.  
+- **Prompt → Response**: Type anything and instantly get an AI-generated image.  
 - **Secure Key Handling**: API keys stay on the backend — never exposed to the browser.  
 - **Modern Frontend**: React 18 with Hooks for a clean and responsive UI.  
 - **Extensible Backend**: Django + DRF endpoints make it easy to plug in other AI or data services.  
@@ -65,3 +65,4 @@ python manage.py runserver
 cd image/frontend
 npm install
 npm start
+
