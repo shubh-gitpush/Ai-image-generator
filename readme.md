@@ -1,5 +1,5 @@
 <!--
-  README.md with HTML inside Markdown
+  README.md with HTML + Markdown
   Replace placeholders (YOUR-USERNAME, YOUR-REPO, etc.) before committing.
 -->
 
@@ -17,47 +17,51 @@
     <img alt="License" src="https://img.shields.io/badge/License-MIT-green" />
     <img alt="Docker" src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" />
   </p>
+
+  <!-- Screenshot placeholder -->
+  <img src="img.png" alt="App screenshot" style="max-width:80%;border-radius:8px;margin-top:1rem;" />
 </div>
 
-<hr />
-
-<!-- Two-column style using HTML table for nicer layout -->
-<table>
-  <tr>
-    <td width="65%" valign="top">
+---
 
 ## ✨ Project Overview
 
-This repository contains a full-stack application that wires a **React** frontend to a **Django + Django REST Framework** backend.  
-Users enter free-text prompts in the frontend; the backend forwards the prompt to an external AI service using a secured API key and returns the generated response to the user.
+This repository contains a **full-stack application** that wires a **React** frontend to a **Django + Django REST Framework** backend.  
 
-**Primary goals**
-- Quick, interactive prompt → AI response experience  
-- Secure API key usage on server-side (never expose secret keys in the frontend)  
-- Clean separation between frontend and backend for scaling and deployment  
-- Container-ready with **Docker** for easy deployment anywhere
+- Users type a **prompt** in the frontend.  
+- The backend securely forwards the request to an **AI API** (with a secret key).  
+- The AI’s response is returned to the user in real time.  
 
-</td>
-    <td width="35%" valign="top">
-
-<!-- Screenshot placeholder (replace with your real screenshot) -->
-<figure>
-  <img src="img.png" alt="App screenshot" style="max-width:100%;border-radius:8px"max-height:100%;">
-  
-</figure>
-
-</td>
-  </tr>
-</table>
+**Why this project is special?**  
+It cleanly separates frontend & backend, handles API keys securely, and is designed for fast deployment with **Docker**.
 
 ---
 
 ## 🚀 Features
 
-<ul>
-  <li><strong>Prompt → Response</strong>: Type anything and get an AI-generated reply.</li>
-  <li><strong>Secure Key Handling</strong>: API keys live on the backend; frontend only calls your DRF endpoints.</li>
-  <li><strong>Modern Frontend</strong>: React with Hooks for a responsive UI.</li>
-  <li><strong>Extensible Backend</strong>: Django + DRF endpoints to integrate other services later.</li>
-  <li><strong>Configurable DB</strong>: SQLite by
+- **Prompt → Response**: Type anything and instantly get an AI-generated reply.  
+- **Secure Key Handling**: API keys stay on the backend — never exposed to the browser.  
+- **Modern Frontend**: React 18 with Hooks for a clean and responsive UI.  
+- **Extensible Backend**: Django + DRF endpoints make it easy to plug in other AI or data services.  
+- **Configurable DB**: Ships with SQLite by default, can scale to PostgreSQL/MySQL.  
+- **Dockerfile Support**: Comes with a `Dockerfile` to build images & containers, making it easier for anyone to run the project without setup issues.  
 
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd YOUR-REPO
+
+# Backend setup
+cd image
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+# Frontend setup
+cd image/frontend
+npm install
+npm start
