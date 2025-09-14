@@ -15,6 +15,7 @@
     <img alt="DRF" src="https://img.shields.io/badge/Django--REST--Framework-3.12-blue?logo=django" />
     <img alt="React" src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" />
     <img alt="License" src="https://img.shields.io/badge/License-MIT-green" />
+    <img alt="Docker" src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" />
   </p>
 </div>
 
@@ -33,7 +34,8 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
 **Primary goals**
 - Quick, interactive prompt → AI response experience  
 - Secure API key usage on server-side (never expose secret keys in the frontend)  
-- Clean separation between frontend and backend for scaling and deployment
+- Clean separation between frontend and backend for scaling and deployment  
+- Container-ready with **Docker** for easy deployment anywhere
 
 </td>
     <td width="35%" valign="top">
@@ -41,7 +43,7 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
 <!-- Screenshot placeholder (replace with your real screenshot) -->
 <figure>
   <img src="img.png" alt="App screenshot" style="max-width:100%;border-radius:8px;">
-  <figcaption style="font-size:12px;color:#666;margin-top:6px;">Example app UI — replace with your own screenshot/GIF</figcaption>
+  
 </figure>
 
 </td>
@@ -57,23 +59,4 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
   <li><strong>Secure Key Handling</strong>: API keys live on the backend; frontend only calls your DRF endpoints.</li>
   <li><strong>Modern Frontend</strong>: React with Hooks for a responsive UI.</li>
   <li><strong>Extensible Backend</strong>: Django + DRF endpoints to integrate other services later.</li>
-  <li><strong>Configurable DB</strong>: SQLite by default; easily switch to PostgreSQL for production.</li>
-</ul>
-
----
-
-## 📂 Project Structure (example)
-
-```text
-project-root/
-├── backend/               # Django project
-│   ├── api/               # DRF app (prompts)
-│   ├── project_settings/  # settings, urls
-│   └── manage.py
-├── frontend/              # React app
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       └── pages/
-└── README.md
-
+  <li><strong>Configurable DB</strong>: SQLite by
