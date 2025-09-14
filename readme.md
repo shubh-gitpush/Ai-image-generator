@@ -42,7 +42,7 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
 
 <!-- Screenshot placeholder (replace with your real screenshot) -->
 <figure>
-  <img src="img.png" alt="App screenshot" style="max-width:100%;border-radius:8px;">
+  <img src="img.png" alt="App screenshot" style="max-width:100%;border-radius:8px"max-height:100%;">
   
 </figure>
 
@@ -60,3 +60,4 @@ Users enter free-text prompts in the frontend; the backend forwards the prompt t
   <li><strong>Modern Frontend</strong>: React with Hooks for a responsive UI.</li>
   <li><strong>Extensible Backend</strong>: Django + DRF endpoints to integrate other services later.</li>
   <li><strong>Configurable DB</strong>: SQLite by
+
